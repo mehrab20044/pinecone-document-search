@@ -19,3 +19,15 @@ Week 6 project from the AI Backend Playbook.
 - Calculated cosine similarity
 - Verified semantically similar sentences score higher
 - Compared local and API-based embedding approaches
+
+
+## Day 22 — Embedding Explorer
+
+- Built a reproducible dataset with 100 sentences in 5 categories.
+- Generated embeddings with two SentenceTransformer models.
+- Both models produced vectors with 384 dimensions.
+- Implemented cosine similarity search and compared Top 5 results.
+- Reduced embeddings from 384D to 2D using t-SNE.
+- t-SNE showed relatively clear clusters, with more overlap between AI and Programming.
+
+![t-SNE Embeddings](tsne_embeddings.png)

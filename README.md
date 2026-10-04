@@ -55,3 +55,22 @@ Pinecone was selected because it is simple to set up, provides a managed cloud s
 - Vector dimension: `384`
 - Similarity metric: `cosine`
 - Verified successful connection to the index
+
+
+
+## Day 24 — Document Ingestion into Pinecone
+
+- Created a sample text document.
+- Split the document into 5 chunks.
+- Generated 384-dimensional embeddings for each chunk.
+- Added unique IDs and metadata to each record.
+- Upserted 5 vectors into the `document-search` Pinecone index.
+- Verified the index contains 5 vectors.
+- Queried Pinecone using a semantic search query.
+- Retrieved relevant chunks with source metadata.
+
+Example query:
+`What is Pinecone used for?`
+
+Top result:
+`Pinecone is a vector database used for similarity search.`

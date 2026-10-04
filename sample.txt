@@ -1,0 +1,5 @@
+FastAPI is a modern Python framework for building APIs.
+Pinecone is a vector database used for similarity search.
+Embeddings represent text as numerical vectors.
+Metadata helps track where each stored vector came from.
+Document search systems split large documents into smaller chunks.

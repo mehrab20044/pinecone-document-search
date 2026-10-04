@@ -31,3 +31,27 @@ Week 6 project from the AI Backend Playbook.
 - t-SNE showed relatively clear clusters, with more overlap between AI and Programming.
 
 ![t-SNE Embeddings](tsne_embeddings.png)
+
+
+## Day 23 — Vector DB Comparison
+
+Compared Pinecone, Weaviate, and Milvus based on:
+- ease of setup
+- free tier
+- scalability
+- managed cloud support
+- metadata filtering
+
+### Decision
+
+Pinecone was selected because it is simple to set up, provides a managed cloud service, supports vector similarity search well, and fits the current document search project.
+
+### Pinecone Setup
+
+- Created a Pinecone account
+- Added API key through `.env`
+- Added `.env` to `.gitignore`
+- Created `document-search` index
+- Vector dimension: `384`
+- Similarity metric: `cosine`
+- Verified successful connection to the index

@@ -1,0 +1,9 @@
+FastAPI is a modern Python framework for building APIs. It is designed to be fast, simple, and developer friendly. FastAPI uses Python type hints and integrates closely with Pydantic for validation.
+
+Pinecone is a managed vector database designed for similarity search. It stores vector embeddings and can return the most similar vectors to a query. Metadata can be stored alongside vectors to track the original source.
+
+Embeddings convert text into numerical vectors. Semantically similar sentences usually produce vectors that are closer together. These vectors can then be compared using similarity metrics such as cosine similarity.
+
+Chunking is the process of splitting a large document into smaller pieces. Good chunking can improve retrieval quality because each chunk contains a more focused meaning. Poor chunking can either lose context or mix unrelated topics together.
+
+Recursive chunking tries to split text using natural separators such as paragraphs, new lines, and sentences. Semantic chunking tries to detect changes in meaning and creates a new chunk when the topic changes.

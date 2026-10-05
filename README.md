@@ -74,3 +74,45 @@ Example query:
 
 Top result:
 `Pinecone is a vector database used for similarity search.`
+
+
+
+
+## Day 25 — Chunking Strategies
+
+Compared three chunking strategies on the same corpus:
+
+- Fixed chunking
+- Recursive chunking
+- Semantic chunking
+
+### Retrieval comparison
+
+Query:
+
+`How does Pinecone perform similarity search?`
+
+Top-1 similarity scores:
+
+- Fixed: `0.461`
+- Recursive: `0.646`
+- Semantic: `0.657`
+
+For this corpus and query, semantic chunking produced the best Top-1 retrieval result, with recursive chunking performing very similarly.
+
+Fixed chunking performed worse because important words and sentences were sometimes split across chunk boundaries.
+
+### Search API
+
+Implemented a FastAPI endpoint:
+
+`GET /search?q=<query>`
+
+The endpoint:
+
+- embeds the query
+- compares it against semantic chunks
+- sorts results by cosine similarity
+- returns the top 3 matches
+
+API test returned HTTP `200` and retrieved the Pinecone chunk as the top result.
